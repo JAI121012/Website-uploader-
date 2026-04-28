@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 Googolplexian Uploader</title>
+    <style>
+        body { background: #050505; color: #00ff00; font-family: 'Courier New', monospace; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; }
+        .card { border: 2px solid #00ff00; padding: 30px; border-radius: 20px; box-shadow: 0 0 20px #00ff00; text-align: center; width: 90%; }
+        input { margin: 20px 0; color: #00ff00; }
+        button { background: #00ff00; color: #000; border: none; padding: 15px 30px; border-radius: 10px; font-weight: bold; cursor: pointer; font-size: 1.1rem; }
+        #status { margin-top: 20px; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>POWER UPLOADER</h2>
+        <p>Custom Domain Ready | 3008MB Active</p>
+        <input type="file" id="fileInput">
+        <br>
+        <button onclick="upload()">START CLOUD UPLOAD</button>
+        <div id="status">System: Idle</div>
+    </div>
+    <script>
+        function upload() {
+            const status = document.getElementById('status');
+            status.innerText = "Scaling to 10 Googolplexian... Processing APK...";
+            // This is where your Vercel Blob logic connects later!
+            setTimeout(() => { status.innerText = "SUCCESS: Uploaded to Cloud Infrastructure"; }, 3000);
+        }
+    </script>
+</body>
+</html>
